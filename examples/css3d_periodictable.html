@@ -274,6 +274,10 @@
 					object.position.y = - ( table[ i + 4 ] * 180 ) + 990;
 
 					targets.table.push( object );
+					
+					var gender = table[i][2];
+					if ( gender == "F" )
+					element.style.backgroundColor = 'rgba(255,192,203)';	
 
 				}
 

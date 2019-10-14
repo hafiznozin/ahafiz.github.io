@@ -243,10 +243,7 @@
 					var element = document.createElement( 'div' );
 					element.className = 'element';
 					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					if ( details == "24" )
-					element.style.backgroundColor = 'rgba(255,192,203)';
-					else
-					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					
 						
 					var number = document.createElement( 'div' );
 					number.className = 'number';
@@ -262,6 +259,11 @@
 					details.className = 'details';
 					details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
 					element.appendChild( details );
+					
+					if ( details == "24" )
+					element.style.backgroundColor = 'rgba(255,192,203)';
+					else
+					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
 
 					var object = new CSS3DObject( element );
 					object.position.x = Math.random() * 4000 - 2000;

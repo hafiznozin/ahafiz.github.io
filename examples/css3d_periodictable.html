@@ -263,11 +263,12 @@
 					var gender = document.createElement( 'div' );
 					gender.className = 'gender';
 					gender.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 3 ];
-					element.appendChild( details );					
-					if ( details == "F" )
-					element.style.backgroundColor = 'rgba(255,192,203)';
-					else
-					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					element.appendChild( details );		
+					alert("Testing");
+					//if ( details == "F" )
+					//element.style.backgroundColor = 'rgba(255,192,203)';
+					//else
+					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
 
 					var object = new CSS3DObject( element );
 					object.position.x = Math.random() * 4000 - 2000;

@@ -243,8 +243,11 @@
 					var element = document.createElement( 'div' );
 					element.className = 'element';
 					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					if ( details == "24" )
 					element.style.backgroundColor = 'rgba(255,192,203)';
-					
+					else
+					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+						
 					var number = document.createElement( 'div' );
 					number.className = 'number';
 					number.textContent = ( i / 5 ) + 1;
@@ -277,8 +280,8 @@
 					targets.table.push( object );
 					
 					//var gender = table[i][2];
-					if ( details == "24" )
-					element.style.backgroundColor = 'rgba(255,192,203)';	
+					//if ( details == "24" )
+					//element.style.backgroundColor = 'rgba(255,192,203)';	
 
 				}
 

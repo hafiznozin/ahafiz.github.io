@@ -259,6 +259,11 @@
 					details.className = 'details';
 					details.innerHTML = table[ i + 1 ] ;
 					element.appendChild( details );  
+					
+					var details = document.createElement( 'div' );
+					gender.className = 'gender';
+					details.innerHTML = table[ i + 2 ];
+					element.appendChild( gender );  
 
 					/* var details = document.createElement( 'div' );
 					details.className = 'details';

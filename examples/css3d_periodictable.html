@@ -165,8 +165,8 @@
 				"Bizara", "40", "F", 18, 5,
 				"Cheq", "19", "F", 1, 6,
 				"Barirah", "Barium", "132.9054", 2, 6,
-				"Lah", "Lanthanum", "138.90547", 4, 9,
-				"Chenta", "Cerium", "140.116", 5, 9,
+				"Lah", "36", "M", 4, 9,
+				"Chenta", "30", "1F", 5, 9,
 				"Porus", "55", "140.90765", 6, 9,
 				"Nadhirah", "30", "144.242", 7, 9,
 				"Pak Man", "61", "M", 8, 9,
@@ -252,7 +252,7 @@
 					var element = document.createElement( 'div' );
 					element.className = 'element';
 					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					
+					element.style.backgroundColor = 'rgba(255,192,203)';
 						
 					var number = document.createElement( 'div' );
 					number.className = 'number';
@@ -286,10 +286,12 @@
 					element.appendChild( details );		
 					alert("Testing"); */
 					
+					/*
 					if ( element.details == "F" )
 					element.style.backgroundColor = 'rgba(255,192,203)';
 					else
 					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					*/
 
 					var object = new CSS3DObject( element );
 					object.position.x = Math.random() * 4000 - 2000;

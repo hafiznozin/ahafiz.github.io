@@ -254,6 +254,11 @@
 					symbol.className = 'symbol';
 					symbol.textContent = table[ i ];
 					element.appendChild( symbol );
+					
+					var details = document.createElement( 'div' );
+					details.className = 'details';
+					details.innerHTML = table[ i + 1 ] ;
+					element.appendChild( details );  
 
 					/* var details = document.createElement( 'div' );
 					details.className = 'details';

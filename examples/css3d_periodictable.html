@@ -46,7 +46,7 @@
 					top: 40px;
 					left: 0px;
 					right: 0px;
-					font-size: 48px;
+					font-size: 32px;
 					font-weight: bold;
 					color: rgba(255,255,255,0.75);
 					text-shadow: 0 0 10px rgba(0,255,255,0.95);
@@ -54,7 +54,7 @@
 
 				.element .details {
 					position: absolute;
-					bottom: 20px;
+					bottom: 30px;
 					left: 0px;
 					right: 0px;
 					font-size: 12px;
@@ -63,7 +63,7 @@
 			
 				.element .gender {
 					position: absolute;
-					bottom: 5px;
+					bottom: 10px;
 					left: 0px;
 					right: 0px;
 					font-size: 12px;
@@ -168,9 +168,9 @@
 				"Cheq", "19", "F", 1, 6,
 				"Barirah", "24", "F", 2, 6,
 				"Lah", "36", "M", 4, 9,
-				"Chenta", "30", "1F", 5, 9,
-				"Porus", "55", "140.90765", 6, 9,
-				"Nadhirah", "30", "144.242", 7, 9,
+				"Chenta", "30", "F", 5, 9,
+				"Porus", "55", "M", 6, 9,
+				"Nadhirah", "30", "F", 7, 9,
 				"Pak Man", "61", "M", 8, 9,
 				"Samuel", "28", "M", 9, 9,
 				"Eina", "22", "F", 10, 9,
@@ -179,15 +179,15 @@
 				"Dya", "33", "F", 13, 9,
 				"Holly", "25", "F", 14, 9,
 				"Ersha", "25", "F", 15, 9,
-				"Timah", "Thulium", "168.93421", 16, 9,
+				"Timah", "23", "1F", 16, 9,
 				"Yb", "24", "M", 17, 9,
 				"Luther", "29", "M", 18, 9,
-				"Hefni", "Hafnium", "178.49", 4, 6,
-				"Taj", "Tantalum", "180.94788", 5, 6,
-				"Wan", "Tungsten", "183.84", 6, 6,
+				"Hefni", "28", "M", 4, 6,
+				"Taj", "22", "M", 5, 6,
+				"Wan", "24", "M", 6, 6,
 				"Rema", "25", "F", 7, 6,
-				"Osman", "Osmium", "190.23", 8, 6,
-				"Ira", "Iridium", "192.217", 9, 6,
+				"Osman", "64", "M", 8, 6,
+				"Ira", "25", "F", 9, 6,
 				"Pablo", "26", "M", 10, 6,
 				"Akmar", "22", "F", 11, 6,
 				"Hajar", "24", "F", 12, 6,
@@ -222,7 +222,7 @@
 				"Matthias", "Meitnerium", "(276)", 9, 7,
 				"Desmona", "30", "F", 10, 7,
 				"Rogayah", "42", "F", 11, 7,
-				"Chinta", "Copernicium", "(285)", 12, 7,
+				"Chinta", "22", "F", 12, 7,
 				"Nahima", "22", "F", 13, 7,
 				"Filzah", "25", "F", 14, 7,
 				"Mastura", "28", "F", 15, 7,
@@ -271,10 +271,11 @@
 					details.innerHTML = table[ i + 1 ] ;
 					element.appendChild( details );  
 					
-					
+					var g;
 					var gender = document.createElement( 'div' );
 					gender.className = 'gender';
 					gender.innerHTML = table[ i + 2 ];
+					g = table[ i + 2 ];
 					element.appendChild( gender );  
 					
 					//alert("Testing :"+ element.appendChild (details) );

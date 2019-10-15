@@ -214,7 +214,7 @@
 				"Chinta", "Copernicium", "(285)", 12, 7,
 				"Nahima", "Nihonium", "(286)", 13, 7,
 				"Filzah", "Flerovium", "(289)", 14, 7,
-				"Mastura", "Moscovium", "(290)", 15, 7,
+				"Mastura", "28", "F", 15, 7,
 				"Lizawati", "48", "F", 16, 7,
 				"Tisha", "24", "F", 17, 7,
 				"Ong", "28", "F", 18, 7
@@ -277,10 +277,10 @@
 					element.appendChild( details );		
 					alert("Testing"); */
 					
-					//if ( details == "F" )
-					//element.style.backgroundColor = 'rgba(255,192,203)';
-					//else
-					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					if ( details == "F" )
+					element.style.backgroundColor = 'rgba(255,192,203)';
+					else
+					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
 
 					var object = new CSS3DObject( element );
 					object.position.x = Math.random() * 4000 - 2000;

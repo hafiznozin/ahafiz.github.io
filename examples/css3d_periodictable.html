@@ -46,7 +46,7 @@
 					top: 40px;
 					left: 0px;
 					right: 0px;
-					font-size: 60px;
+					font-size: 48px;
 					font-weight: bold;
 					color: rgba(255,255,255,0.75);
 					text-shadow: 0 0 10px rgba(0,255,255,0.95);
@@ -55,6 +55,15 @@
 				.element .details {
 					position: absolute;
 					bottom: 15px;
+					left: 0px;
+					right: 0px;
+					font-size: 12px;
+					color: rgba(127,255,255,0.75);
+				}
+			
+				.element .gender {
+					position: absolute;
+					bottom: 5px;
 					left: 0px;
 					right: 0px;
 					font-size: 12px;
@@ -143,10 +152,10 @@
 				"Naimah", "17", "F" , 5, 5,
 				"Mo", "24", "M", 6, 5,
 				"Thanos", "28", "M", 7, 5,
-				"Ruaimah", "Ruthenium", "101.07", 8, 5,
-				"Rihana", "Rhodium", "102.9055", 9, 5,
-				"Padli", "Palladium", "106.42", 10, 5,
-				"Agnes", "Silver", "107.8682", 11, 5,
+				"Ruaimah", "28", "F", 8, 5,
+				"Rihana", "24", "F", 9, 5,
+				"Fadli", "25", "M", 10, 5,
+				"Agnes", "27", "F", 11, 5,
 				"Cuddy", "Cadmium", "112.411", 12, 5,
 				"Indra", "46", "114.818", 13, 5,
 				"Sonia", "40", "118.71", 14, 5,
@@ -277,7 +286,7 @@
 					element.appendChild( details );		
 					alert("Testing"); */
 					
-					if ( details == "F" )
+					if ( elements.details == "F" )
 					element.style.backgroundColor = 'rgba(255,192,203)';
 					else
 					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';

@@ -234,6 +234,8 @@
 			var camera, scene, renderer;
 			var controls;
 
+			var g;
+			
 			var objects = [];
 			var targets = { table: [], sphere: [], helix: [], grid: [] };
 
@@ -253,8 +255,8 @@
 
 					var element = document.createElement( 'div' );
 					element.className = 'element';
-					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					element.style.backgroundColor = 'rgba(255,192,203)';
+					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					//element.style.backgroundColor = 'rgba(255,192,203)';
 						
 					var number = document.createElement( 'div' );
 					number.className = 'number';
@@ -271,7 +273,7 @@
 					details.innerHTML = table[ i + 1 ] ;
 					element.appendChild( details );  
 					
-					var g;
+				
 					var gender = document.createElement( 'div' );
 					gender.className = 'gender';
 					gender.innerHTML = table[ i + 2 ];
@@ -327,10 +329,12 @@
 				//var xx = table [2];
 				//var xi = table [0][1];
 				
-				if ( xx == "Farah" )
+				alert(g) ;
+				
+				/*if ( xx == "Farah" )
 				alert("Testing : ini" + xx );	
 				else 
-				alert("Testing not" );
+				alert("Testing not" ); */
 			      
 				
 				// sphere

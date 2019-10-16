@@ -398,7 +398,22 @@
 				var vector = new THREE.Vector3();
 				
 				for ( var i = 0; i < objects.length; i ++ ) {
+					
+				for (var j = 1; j <= i; j++) {
+     				   //arr.push(j);
+					
+					targets.pyramid.push( object );
+       				     console.log(object);
+    					    }
+     				   console.log('<br>');
+  					 	
 
+					
+					
+					
+					
+					
+					
 					//var radius = 4;
 					//var height = 5;
 
@@ -414,14 +429,14 @@
 					
 					//var geometry = new THREE.BoxBufferGeometry( (i % 5),( i/5, (i/5);
 
-					object.position.x = ( ( i % 5 ) * 400 ) - 600;
-					object.position.y = ( - ( Math.floor( i / 4 ) % 4 ) * 400 ) + 800;
+					//object.position.x = ( ( i % 5 ) * 400 ) - 600;
+					//object.position.y = ( - ( Math.floor( i / 4 ) % 4 ) * 400 ) + 800;
 					//object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
 
 					//object.lookAt( vector );
 					
 					
-					targets.pyramid.push( object );
+					//targets.pyramid.push( object );
 
 				}
 

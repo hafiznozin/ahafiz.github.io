@@ -401,7 +401,7 @@
 				
 				//Pyramid
 				
-				//var vector = new THREE.Vector3();
+				var vector = new THREE.Vector3();
 				
 				for ( var i = 0; i < objects.length; i ++ ) {
 
@@ -419,11 +419,11 @@
 					
 					//var geometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
 
-					object.position.x = ( ( i % 5 ) * 400 ) - 800;
+					object.position.x = ( ( i % 5 ) * 200 ) - 400;
 					//object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
 					//object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
 
-					//object.lookAt( vector );
+					object.lookAt( vector );
 					
 					targets.pyramid.push( object );
 

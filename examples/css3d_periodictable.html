@@ -396,22 +396,17 @@
 				//Pyramid
 				
 				var vector = new THREE.Vector3();
-				
+				var output="";
 				for ( var i = 0; i < objects.length; i ++ ) {
-					
-				for (var j = 1; j <= i; j++) {
-     				   //arr.push(j);
-					
-				     console.log(object);
-    					    }
-     				   console.log('<br>');
-  					 	
+					for (var j = 1; j <= i; j++) {
+            					output+=j + "     ";
+        				}
+      					  console.log(output);
+      						  output="";
+    						}
+				
 
-					
-					
-					
-					
-					
+			
 					
 					//var radius = 4;
 					//var height = 5;

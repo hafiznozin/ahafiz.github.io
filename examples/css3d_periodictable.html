@@ -318,10 +318,7 @@
 
 					targets.table.push( object );
 					
-					//var gender = table[i][2];
-					//if ( details == "24" )
-					//element.style.backgroundColor = 'rgba(255,192,203)';	
-
+				
 				}
 
 				//var xx = table [0];
@@ -406,11 +403,21 @@
 				
 				for ( var i = 0; i < objects.length; i ++ ) {
 
-					var object = new THREE.Object3D();
+					var radius = 4;
+					var height = 5;
 
-					object.position.x = ( ( i % 5 ) * 400 ) - 800;
-					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
-					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
+
+					var geometry = new THREE.CylinderGeometry(0, radius, height, 4, 1)
+					
+					
+					
+					var object = new THREE.Object3D();
+					
+					//var geometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
+
+					//object.position.x = ( ( i % 5 ) * 400 ) - 800;
+					//object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
+					//object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
 
 					
 					

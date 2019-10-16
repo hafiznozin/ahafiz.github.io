@@ -396,38 +396,18 @@
 				//Pyramid
 				
 				var vector = new THREE.Vector3();
-				var output="";
-				for ( var i = 0; i < objects.length; i ++ ) {
-					for (var j = 1; j <= i; j++) {
-            					output+=j + "     ";
-        				}
-      					  console.log(output);
-      						  output="";
-    					
-				
-
 			
+				for ( var i = 0; i < objects.length; i ++ ) {
 					
-					//var radius = 4;
-					//var height = 5;
-
-
-					//var geometry = new THREE.ConeGeometry(8,8,4,1)
-					//var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
-					//var cone = new THREE.Mesh( geometry, material );
-					//scene.add( cone );
-					
-					//var geometry = new THREE.CylinderGeometry(0, 4, 5 , 4, 1)
 					
 					var object = new THREE.Object3D();
 					
-					//var geometry = new THREE.BoxBufferGeometry( (i % 5),( i/5, (i/5);
+					
+					object.position.x = ( ( i % 5 ) * 400 ) - 600;
+					object.position.y = ( - ( Math.floor( i / 4 ) % 4 ) * 400 ) + 800;
+					object.position.z = ( Math.floor( i / 30 ) ) * 1000 - 2000;
 
-					//object.position.x = ( ( i % 5 ) * 400 ) - 600;
-					//object.position.y = ( - ( Math.floor( i / 4 ) % 4 ) * 400 ) + 800;
-					//object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
-
-					//object.lookAt( vector );
+					object.lookAt( vector );
 					
 					
 					targets.pyramid.push( object );

@@ -398,17 +398,26 @@
 				//var vector = new THREE.Vector3();
 			
 				for ( var i = 0; i < objects.length; i ++ ) {
+					
+			
+    				    for (var j = 1; j <= i; j++) {
+					    
+					object.position.x = ( ( i % 1 ) * 400 ) - 800;    
+					targets.pyramid.push(object);
+        			    	   }
+     				  
+ 					
 				
-					var object = new THREE.Object3D();
-										
-					object.position.x = ( ( i % 5 ) * 400 ) - 800;
-					object.position.y = ( - ( Math.floor( i / 4 ) % 6 ) * 400 ) + 800;
-					object.position.z = ( Math.floor( i / 25 ) ) * 800 - 2000 ;
+					//var object = new THREE.Object3D();
+									
+					//object.position.x = ( ( i % 5 ) * 400 ) - 800;
+					//object.position.y = ( - ( Math.floor( i / 4 ) % 6 ) * 400 ) + 800;
+					//object.position.z = ( Math.floor( i / 25 ) ) * 800 - 2000 ;
 
 					//object.lookAt( vector );
 					
 					
-					targets.pyramid.push( object );
+					//targets.pyramid.push( object );
 
 				}
 

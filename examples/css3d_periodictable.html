@@ -414,16 +414,18 @@
 					//var cone = new THREE.Mesh( geometry, material );
 					//scene.add( cone );
 					
+					//var geometry = new THREE.CylinderGeometry(0, 4, 5 , 4, 1)
 					
 					var object = new THREE.Object3D();
 					
-					//var geometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
+					var geometry = new THREE.BoxBufferGeometry( (i % 5),( i/5, (i/5);
 
-					object.position.x = ( ( i % 5 ) * 200 ) - 400;
+					//object.position.x = ( ( i % 5 ) * 200 ) - 800;
 					//object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
 					//object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
 
 					object.lookAt( vector );
+					
 					
 					targets.pyramid.push( object );
 

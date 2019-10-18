@@ -399,14 +399,16 @@
 				//var vector = new THREE.Vector3();
 				
 				for ( var i = 0; i <object.length; i ++ ) {
-					 
+					
+					var object1 = new THREE.Object3D(); 
+					
 					if (i == 1)
 					{		
-					object.position.x = ( (i % 1) * 180 ) - 1330;
+					object1.position.x = ( (i % 1) * 180 ) - 1330;
 					//object.position.x = ( ( i % 1 ) * 200 ) - 1200;    
 					//object.position.y = ( - ( Math.floor( i / 5) % 5 ) * 200 ) + 800;
 					    
-					var object1 = new THREE.Object3D();
+					
 					}
 					
 					
@@ -440,7 +442,8 @@
 
 					//object.lookAt( vector );
 					
-					targets.pyramid.push( object );
+					targets.pyramid.push( object1 );
+					//targets.pyramid.push( object );
 
 				}
 

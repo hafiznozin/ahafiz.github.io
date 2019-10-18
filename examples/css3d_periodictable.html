@@ -398,16 +398,18 @@
 				
 				//var vector = new THREE.Vector3();
 				
-				for ( var i = 0; i < 10; i ++ ) {
+				for ( var i = 0; i <object.length; i ++ ) {
 					 
-					
+					if (i == 1)
+					{		
 					object.position.x = ( (i % 1) * 180 ) - 1330;
-					object.position.y = - ((i % 10) * 180 ) + 990;
 					//object.position.x = ( ( i % 1 ) * 200 ) - 1200;    
 					//object.position.y = ( - ( Math.floor( i / 5) % 5 ) * 200 ) + 800;
 					    
-					var object = new THREE.Object3D();
-			
+					var object1 = new THREE.Object3D();
+					}
+					
+					
 				//for ( var i = 0; i < objects.length; i ++ ) {
 				
 					//var object = new THREE.Object3D();

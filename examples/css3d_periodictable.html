@@ -404,10 +404,13 @@
 				
 				var object1 = new CSS3DObject( element );	
 				
-				for ( var i = 0; i < 1 ; i ++ ) {
+				for ( var i = 0; i < objects.length ; i ++ ) {
 					
 					var object1 = new THREE.Object3D(); 
-							
+					
+					if ( i == 1 ) 
+					object1.position.x = ( (i % 1) * 180 ) - 1330;	
+						
 					//object1.position.setFromCylindricalCoords( 900, theta, y );
 					
 					object1.position.x = ( (i % 1) * 180 ) - 1330;
